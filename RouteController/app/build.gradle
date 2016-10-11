@@ -25,4 +25,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile files('C:/Users/user/AndroidStudioProjects/RouteController/libraries/Window.jar')
     compile files('C:/Users/user/AndroidStudioProjects/RouteController/libraries/Feature.jar')
+    compile files('C:/Users/CARROT/Documents/GitHub/RouteController2/RouteController/libraries/Feature.jar')
+    compile files('C:/Users/CARROT/Documents/GitHub/RouteController2/RouteController/libraries/Window.jar')
 }

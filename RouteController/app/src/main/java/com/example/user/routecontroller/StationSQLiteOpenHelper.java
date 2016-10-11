@@ -7,23 +7,23 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by user on 2016/10/11.
  */
-public class SQLiteOpenHelperImpl extends SQLiteOpenHelper{
+public class StationSQLiteOpenHelper extends SQLiteOpenHelper{
 
     private static final String DB = "";
     private static final int DB_VERSION = 1;
 
     private static volatile SQLiteOpenHelper helper = null;
 
-    public SQLiteOpenHelper getHelperObject(Context context){
+    public static SQLiteOpenHelper getHelperObject(Context context){
         if(helper == null){
-            SQLiteOpenHelper myHelper = new SQLiteOpenHelperImpl(context);
+            SQLiteOpenHelper myHelper = new StationSQLiteOpenHelper(context);
             helper = myHelper;
         }
         return helper;
     }
 
 
-    private SQLiteOpenHelperImpl(Context context) {
+    private StationSQLiteOpenHelper(Context context) {
         super(context,DB,null,DB_VERSION);
     }
 
